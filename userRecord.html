@@ -1,0 +1,395 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from event.iitg.ac.in/RMS2024/userRecord.php by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 21 Apr 2024 17:27:20 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="icons-1.7.2/font/bootstrap-icons.css">
+  <link rel="stylesheet" type="text/css" href="font/font.css">
+  <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="styleReset.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="jquery/jquery-3.6.0.min.js"></script>
+  <script src="bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+
+
+
+  <title>RMS2024 | User Records</title>
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+
+    .table {
+      background-color: white;
+      font-family: 'Roboto', sans-serif;
+      font-size: .8rem;
+    }
+
+    .topbar {
+      width: 100%;
+      height: 45px;
+      background: #26A69A;
+    }
+
+    .heading {
+      letter-spacing: 1rem;
+      width: 100%;
+      font-size: clamp(10px, 1.2vw, 1.5rem);
+
+    }
+
+
+    .bi-box-arrow-right {
+      line-height: 25px;
+      color: gray;
+    }
+
+    .all-records {
+      position: relative;
+      margin-top: 2rem;
+      border-radius: 5px;
+    }
+
+
+    #myInput {
+      padding: 0 0 0 3px !important;
+      border: 1px solid #6c757d;
+      border-radius: 0.25rem;
+    }
+
+    body {
+      max-width: 1600px;
+    }
+
+
+
+    .form-floating>label {
+
+      padding: .5rem 0.75rem !important;
+    }
+
+    tbody>tr>th {
+      text-align: right;
+      font-size: 1rem;
+      padding-right: 1rem !important;
+      color: #4d5e6f;
+
+    }
+
+    tbody>tr>td {
+      font-size: 1rem;
+      padding-left: 1rem !important;
+      color: #323c2c;
+
+    }
+
+    thead>tr>th {
+      text-align: center !important;
+      font-size: 1rem;
+    }
+
+
+    .btn {
+      height: 2.8rem;
+    }
+
+    .table {
+      min-width: 300px;
+      max-width: 1000px;
+    }
+
+    .topTH {
+      background-color: #4f7da6 !important;
+    }
+
+    .fixedTr {
+      background-color: #E8FEFF;
+    }
+
+    .fixedTr>td {
+      letter-spacing: 5px;
+      height: 100px;
+      vertical-align: middle;
+      color: #3e94a6;
+    }
+
+    .m-header {
+      position: relative;
+
+    }
+
+    .m-title {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .table {
+      min-width: 550px;
+    }
+
+    .card {
+      min-height: 100vh;
+    }
+  </style>
+</head>
+
+<body id="body">
+
+  <div class="WrapperBox">
+
+    <div class="d-flex flex-column justify-content-center align-items-center top m-0 p-0 h3 text-secondary text-center pt-2">
+<p class="p-0 m-0 topLine">RMS2024</p>
+    
+    <input class="form-control p-0 m-0 form-control-sm m-0 ps-1 searchBox" type="text" placeholder="Search" name="keyword">
+</div>
+<hr>
+<!-- <div class="navWrap"> -->
+<nav class="navbar navbar-expand-lg my-1" id="navbar">
+  <div class="container-fluid">
+       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" aria-expanded="false" aria-label="Toggle navigation">
+      <!-- <span class="navbar-toggler-icon"></span> -->
+      <i class="bi bi-list"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="">
+      <ul class="navbar-nav ms-auto">
+ <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="index.html"><i class="bi bi-house-fill"></i></a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="overview.html">Overview</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link text-lg-center" href="#">Venue & Travel</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="registration.html">Registration</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href=#>Accommodation</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link text-lg-center" href="organizers.html">Symposia & Organizers</a>
+</li>
+
+<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Speakers
+          </a>
+          
+        </li>
+
+
+<li class="nav-item">
+    <a class="nav-link" href=#>Schedule & Abstract</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="committee.html">Committee</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link text-lg-center" href="https://www.ramanujanmathsociety.org/" target="_blank">Ramanujan Mathematical Society</a>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link" href="contact.html">Contact</a>
+</li>
+
+
+      </ul>
+   
+    </div>
+  </div>
+</nav>
+<!-- </div> --><!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Enable both scrolling & backdrop</button> -->
+
+  <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+    <!-- <div class="offcanvas-header">
+      <i class="bi bi-x-lg" data-bs-dismiss="offcanvas" aria-label="Close"></i>
+    </div> -->
+   <div class="offcanvasInner">
+   <!-- <i class="bi bi-x-lg" data-bs-dismiss="offcanvas" aria-label="Close"></i> -->
+   <i class="bi bi-x-square" data-bs-dismiss="offcanvas" aria-label="Close"></i>
+     <div class="offcanvas-body">
+       <ul class="ul-offcanvas text-white">
+         
+         <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="index.html"><i class="bi bi-house-fill"></i></a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="overview.html">Overview</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link text-lg-center" href="#">Venue & Travel</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="registration.html">Registration</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href=#>Accommodation</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link text-lg-center" href="organizers.html">Symposia & Organizers</a>
+</li>
+
+<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Speakers
+          </a>
+          
+        </li>
+
+
+<li class="nav-item">
+    <a class="nav-link" href=#>Schedule & Abstract</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="committee.html">Committee</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link text-lg-center" href="https://www.ramanujanmathsociety.org/" target="_blank">Ramanujan Mathematical Society</a>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link" href="contact.html">Contact</a>
+</li>
+
+
+       </ul>
+     </div>
+   </div>
+  </div>
+    <div class="card m-0 p-0">
+
+      <div class="d-flex justify-content-center align-items-center p-0 m-0 text-uppercase fs-4 topbar">
+        <div class="heading text-center m-0 p-0 text-white">
+          Your Records
+        </div>
+      </div>
+
+
+
+      <div class="row p-0 m-0 mt-3">
+
+        <div class="col-md-3 mb-3">
+          <div class="form-floating">
+            <input type="email" name="email" id="email" class="form-control form-control-sm email" placeholder=" " />
+            <label class="form-label text-secondary" for="email">Email</label>
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="form-floating">
+            <input type="text" name="regCode" id="regCode" class="form-control form-control regCode" placeholder=" " />
+            <label class="form-label text-secondary" for="regCode">Registration Code</label>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <button class="btn btn-success showData">Show Data</button>
+        </div>
+      </div>
+
+
+      <!-- table start -->
+      <div class="table-responsive all-records px-2 mx-2 mb-4">
+
+        <table class="table table-bordered table-striped align-middle mx-auto">
+          <thead>
+            <tr>
+              <th scope="col" class="topTH text-white" style="width: 200px;">FIELD</th>
+              <th scope="col" class="topTH text-white" style="width: 200px;">DATA</th>
+
+            </tr>
+          </thead>
+          <tbody class="tbody">
+            <tr class="fixedTr">
+              <td colspan="2" class="text-center fs-5 text-uppercase">see data here</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+
+
+    </div>
+    <div class="footer my-2 p-2">
+
+<div class="ulWrapper">
+    <ul class="ul-footer ms-3 my-2 ul-footer-1">
+                <li class="footer-li"><a href="https://www.iitg.ac.in/" target="_blank">CHRIST(DEEMED TO BE UNIVERSITY)</a></li>
+
+                <li class="footer-li"><a href="https://www.iitg.ac.in/iitg_academic?aca=mathematics" target="_blank">Department of Science and Huanities, Kengeri Campus</a></li>
+
+    </ul>
+</div>
+
+<div class="copyRight"><p class="text-center">© All Rights reserved.</p></div>
+</div>  </div>
+
+  <script>
+    $(document).ready(function() {
+
+
+
+      $('.showData').click(function(e) {
+        e.preventDefault();
+
+        var email = $('.email').val().trim();
+        var regCode = $('.regCode').val().trim();
+
+        if ($('.email').val() == "" || $('.regCode').val() == "") {
+          $('.email').val("");
+          $('.regCode').val("");
+          alert("Fill in all fields");
+          return;
+
+        } else {
+
+          $.ajax({
+            url: "./admin/userdata-ajax.php",
+            type: "POST",
+            data: {
+              Email: email,
+              RegCode: regCode
+            },
+            success: function(data) {
+
+              if (data == 0) {
+                alert("Something went wrong")
+              }
+
+              if (data == 5) {
+                alert("No Record found.")
+              } else {
+
+                $('.tbody').html(data);
+
+              }
+            }
+          });
+        }
+      }) //  show table end
+
+
+
+
+
+
+    })
+  </script>
+
+</body>
+
+
+<!-- Mirrored from event.iitg.ac.in/RMS2024/userRecord.php by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 21 Apr 2024 17:27:21 GMT -->
+</html>

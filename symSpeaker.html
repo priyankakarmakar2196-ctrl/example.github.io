@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from event.iitg.ac.in/RMS2024/symSpeaker.php by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 21 Apr 2024 17:26:01 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RMS2024 | Symposia Speakers</title>
+  <link rel="stylesheet" type="text/css" href="icons-1.7.2/font/bootstrap-icons.css">
+  <link rel="stylesheet" type="text/css" href="fontawesome6/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="font/font.css">
+  <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="jquery/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="waypoints/lib/jquery.waypoints.min.js"></script>
+  <!-- <script src="bootstrap-5.0.2-dist/js/bootstrap.js"></script> -->
+  <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="search.js"></script>
+  <script src="dist/jquery.mark.min.js"></script>
+  <style>
+      *,
+    *::before,
+    *::after {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    .card-body {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      justify-items: center;
+    }
+
+
+    ul>li{
+      list-style: none;
+    }
+    .ulinvSpeaker {
+      counter-reset: count;
+    }
+
+    .ulinvSpeaker>li,
+    .listName {
+      color: rgb(72, 87, 136);
+    }
+
+    .listName {
+      letter-spacing: 3px;
+    }
+
+    .sp {
+      font-size: 1.5rem;
+      color: rgb(72, 87, 136);
+    }
+
+
+
+    .ulinvSpeaker>li.sp {
+      counter-increment: count;
+    }
+
+    .ulinvSpeaker>li.sp::before {
+      content: counter(count) '';
+      color: rgb(72, 87, 136);
+    }
+
+    .ulinvSpeaker>li.sp:nth-child(-n+10):before {
+      content: '0' counter(count);
+    }
+
+    .li2 {
+      font-weight: 600;
+    }
+
+    .li2>span {
+      letter-spacing: 3px;
+    }
+
+    .fLi>span {
+      display: inline-block;
+      position: relative;
+      color: rgb(72, 87, 136);
+    }
+
+    /* .fLi>span::after {
+      position: absolute;
+      content: '';
+      width: 3rem;
+      height: 3px;
+      background-color: rgb(72, 87, 136);
+      right: 0;
+      bottom: -2px;
+    } */
+
+    .ulinvSpeaker>li {
+      list-style: none;
+    }
+    
+    .ulinvSpeaker>li>a {
+      text-decoration: none;
+    }
+    
+    .sp {
+      list-style: square;
+      list-style-position: inside;
+    }
+
+
+
+
+    .card>.card-body>ul {
+      width: 50%;
+    }
+
+    .card>.card-body>ul>li {
+      margin-left: 2rem;
+    }
+
+
+    .ulinvSpeaker {
+      width: auto !important;
+    }
+
+    @media only screen and (max-width: 992px) {
+      .card>.card-body>ul {
+        width: 70%;
+      }
+
+
+      .card>.card-body>ul>li {
+        margin-left: 0;
+      }
+
+      .ulinvSpeaker {
+        width: auto !important;
+      }
+
+
+    }
+
+    @media only screen and (max-width: 768px) {
+      .sp {
+        font-size: 1.2rem;
+      }
+
+      .card>.card-body>ul {
+        width: 100%;
+      }
+
+      .ulinvSpeaker {
+        width: auto !important;
+      }
+
+    }
+  </style>
+</head>
+
+<body id="body">
+
+  <div class="WrapperBox">
+
+    <div class="d-flex flex-column justify-content-center align-items-center top m-0 p-0 h3 text-secondary text-center pt-2">
+<p class="p-0 m-0 topLine">RMS2024</p>
+    
+    <input class="form-control p-0 m-0 form-control-sm m-0 ps-1 searchBox" type="text" placeholder="Search" name="keyword">
+</div>
+<hr>
+<!-- <div class="navWrap"> -->
+<nav class="navbar navbar-expand-lg my-1" id="navbar">
+  <div class="container-fluid">
+       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" aria-expanded="false" aria-label="Toggle navigation">
+      <!-- <span class="navbar-toggler-icon"></span> -->
+      <i class="bi bi-list"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="">
+      <ul class="navbar-nav ms-auto">
+ <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="index.html"><i class="bi bi-house-fill"></i></a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="overview.html">Overview</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link text-lg-center" href="#">Venue & Travel</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="registration.html">Registration</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href=#>Accommodation</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link text-lg-center" href="organizers.html">Symposia & Organizers</a>
+</li>
+
+<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Speakers
+          </a>
+          
+        </li>
+
+
+<li class="nav-item">
+    <a class="nav-link" href=#>Schedule & Abstract</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="committee.html">Committee</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link text-lg-center" href="https://www.ramanujanmathsociety.org/" target="_blank">Ramanujan Mathematical Society</a>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link" href="contact.html">Contact</a>
+</li>
+
+
+      </ul>
+   
+    </div>
+  </div>
+</nav>
+<!-- </div> --><!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Enable both scrolling & backdrop</button> -->
+
+  <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+    <!-- <div class="offcanvas-header">
+      <i class="bi bi-x-lg" data-bs-dismiss="offcanvas" aria-label="Close"></i>
+    </div> -->
+   <div class="offcanvasInner">
+   <!-- <i class="bi bi-x-lg" data-bs-dismiss="offcanvas" aria-label="Close"></i> -->
+   <i class="bi bi-x-square" data-bs-dismiss="offcanvas" aria-label="Close"></i>
+     <div class="offcanvas-body">
+       <ul class="ul-offcanvas text-white">
+         
+         <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="index.html"><i class="bi bi-house-fill"></i></a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="overview.html">Overview</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link text-lg-center" href="#">Venue & Travel</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="registration.html">Registration</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href=#>Accommodation</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link text-lg-center" href="organizers.html">Symposia & Organizers</a>
+</li>
+
+<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Speakers
+          </a>
+          
+        </li>
+
+
+<li class="nav-item">
+    <a class="nav-link" href=#>Schedule & Abstract</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="committee.html">Committee</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link text-lg-center" href="https://www.ramanujanmathsociety.org/" target="_blank">Ramanujan Mathematical Society</a>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link" href="contact.html">Contact</a>
+</li>
+
+
+       </ul>
+     </div>
+   </div>
+  </div>
+
+ <!-- link -->
+ <div class="card scheduleCard m-0 p-0">
+      <div class="card-body m-0 p-2">
+        <ul class="ulinvSpeaker p-0 m-0 my-md-5">
+          <li class="fs-3 mb-3 text-center fw-bold fLi"><span>List of Speakers by Subject</span></li>
+
+          <!-- <li class="mb-1 sp" id=""><span>&#9474;</span><a href="#1">Algebra</a></li>
+          <li class="mb-1 sp" id=""><span>&#9474;</span><a href="#2">Algebraic Geometry</a></li>
+          <li class="mb-1 sp" id=""><span>&#9474;</span><a href="#3">Algebraic Graph Theory</a></li>
+          <li class="mb-1 sp" id=""><span>&#9474;</span><a href="#4">Complex Analysis</a></li>
+          <li class="mb-1 sp" id=""><span>&#9474;</span><a href="#5">Functional Analysis</a></li>
+          <li class="mb-1 sp" id=""><span>&#9474;</span><a href="#6">Geometry and Topology </a></li>
+          <li class="mb-1 sp" id=""><span>&#9474;</span><a href="#7">Groups and their Representations</a></li>
+          <li class="mb-1 sp" id=""><span>&#9474;</span><a href="#8">Numerical Analysis</a></li>
+          <li class="mb-1 sp" id=""><span>&#9474;</span><a href="#9">Number Theory</a></li>
+          <li class="mb-1 sp" id=""><span>&#9474;</span><a href="#10">Partial Differential Equation</a></li>
+          <li class="mb-1 sp" id=""><span>&#9474;</span><a href="#11">Probability Theory</a></li>
+          <li class="mb-1 sp" id=""><span>&#9474;</span><a href="#12">Women in Mathematics</a></li>
+          <li class="mb-1 sp" id=""><span>&#9474;</span><a href="#13">History of Mathematics in India (HoMI)</a></li> -->
+
+
+
+          <li class="mb-1 sp" id=""><span>&#9474;</span><a href="#1">Algebra   </a>  |  <a href="abs_symposia/Abstract_Algebra.pdf" target="_blank">Abstract  </a> <i class="bi bi-download"></i> </li>
+          <li class="mb-1 sp" id=""><span>&#9474;</span><a href="#2">Algebraic Geometry   </a>  |  <a href="abs_symposia/Abstracts-Algeb-Geometry.pdf" target="_blank">Abstract  </a> <i class="bi bi-download"></i> </li>
+          <li class="mb-1 sp" id=""><span>&#9474;</span><a href="#3">Algebraic Graph Theory   </a>  |  <a href="abs_symposia/Abstracts-Alg%20Graph%20Thy.pdf" target="_blank">Abstract  </a> <i class="bi bi-download"></i> </li>
+          <li class="mb-1 sp" id=""><span>&#9474;</span><a href="#4">Complex Analysis   </a>  |  <a href="abs_symposia/Abstract_Complex.pdf" target="_blank">Abstract  </a> <i class="bi bi-download"></i> </li>
+          <li class="mb-1 sp" id=""><span>&#9474;</span><a href="#5">Functional Analysis   </a>  |  <a href="abs_symposia/Abstracts-Functional-Revised.pdf" target="_blank">Abstract  </a> <i class="bi bi-download"></i> </li>
+          <li class="mb-1 sp" id=""><span>&#9474;</span><a href="#6">Geometry and Topology    </a>  |  <a href="abs_symposia/Abstract-Geometry-Topology.pdf" target="_blank">Abstract  </a> <i class="bi bi-download"></i> </li>
+          <li class="mb-1 sp" id=""><span>&#9474;</span><a href="#7">Groups and their Representations   </a>  |  <a href="abs_symposia/Abstract_Groups_Reprs.pdf" target="_blank">Abstract  </a> <i class="bi bi-download"></i> </li>
+          <li class="mb-1 sp" id=""><span>&#9474;</span><a href="#8">Numerical Analysis   </a>  |  <a href="abs_symposia/Abstracts-Numerical%20Analysis.pdf" target="_blank">Abstract  </a> <i class="bi bi-download"></i> </li>
+          <li class="mb-1 sp" id=""><span>&#9474;</span><a href="#9">Number Theory   </a>  |  <a href="abs_symposia/Abstract-Number-Theory.pdf" target="_blank">Abstract  </a> <i class="bi bi-download"></i> </li>
+          <li class="mb-1 sp" id=""><span>&#9474;</span><a href="#10">Partial Differential Equation   </a>  |  <a href="abs_symposia/Abstract_PDE.pdf" target="_blank">Abstract  </a> <i class="bi bi-download"></i> </li>
+          <li class="mb-1 sp" id=""><span>&#9474;</span><a href="#11">Probability Theory   </a>  |  <a href="abs_symposia/Abstract_Probability.pdf" target="_blank">Abstract  </a> <i class="bi bi-download"></i> </li>
+          <li class="mb-1 sp" id=""><span>&#9474;</span><a href="#12">Women in Mathematics   </a>  |  <a href="abs_symposia/Abstracts-Women.pdf" target="_blank">Abstract  </a> <i class="bi bi-download"></i> </li>
+          <li class="mb-1 sp" id=""><span>&#9474;</span><a href="#13">History of Mathematics in India (HoMI)   </a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- algerbra -->
+    <div class="card scheduleCard m-0 p-0 mt-2" id="1">
+      <div class="card-body m-0 p-2">
+        <ul class="my-md-5 p-0 m-0 ">
+          <li class="fs-3 mb-1 text-center fw-bold listName fLi"><span>Algebra</span></li>
+          <li class="fs-5 mb-3 text-center li2 text-secondary"><span>Organizer-</span>Mousumi Mandal (IIT Kharagpur)</li>
+          <!-- <li class="mb-3 fs-6 text-center">* [ To be confirmed ]</li> -->
+          <li class="mb-1 sp">A. Ambily, Cochin University of Science and Technology</li>
+          <li class="mb-1 sp">Rabeya Basu, IISER Pune</li>
+          <li class="mb-1 sp">Prosenjit Das, Indian Institute of Space and Technology</li>
+          <li class="mb-1 sp">Suprajo Das, IIT Bombay</li>
+          <li class="mb-1 sp">Clare D'Cruz, CMI</li>
+          <li class="mb-1 sp">Dipankar Ghosh, IIT Kharagpur</li>
+          <li class="mb-1 sp">Neeraj Kumar, IIT Hyderabad</li>
+          <li class="mb-1 sp">Mousumi Mandal, IIT Kharagpur</li>
+          <li class="mb-1 sp">Vivek Mukundan, IIT Delhi</li>
+          <!-- <li class="mb-1 sp">Ranv</li> -->
+          <li class="mb-1 sp">Ramakrishna Nanduri, IIT Kharagpur</li>
+          <li class="mb-1 sp">Tony J. Puthenpurakal, IIT Bombay</li>
+          <li class="mb-1 sp">Kumari Saloni, IIT Patna</li>
+          <!-- <li class="mb-1 sp">Parangama Sarkar, IIT Palakkad</li> -->
+          <li class="mb-1 sp">Indranath Sengupta, IIT Gandhinagar</li>
+          <li class="mb-1 sp">Soumi Tikader, Diamond Harbour Women's University</li>
+          <!-- <li class="mb-1 sp">Ngo Viet Trung, Vietnam Academy of Science and Technology</li> -->
+          <li class="mb-1 sp">J. K. Verma, IIT Bombay</li>
+          <!-- <li class="mb-1 sp">Vinay Wagh, IIT Guwahati</li> -->
+
+        </ul>
+      </div>
+    </div>
+
+    <!-- Algebraic geometry -->
+    <div class="card scheduleCard m-0 p-0 mt-2" id="2">
+      <div class="card-body m-0 p-2">
+        <ul class="my-md-5 p-0 m-0 ">
+          <li class="fs-3 mb-1 text-center fw-bold listName fLi"><span>Algebraic Geometry</span></li>
+          <li class="fs-5 mb-3 text-center li2 text-secondary"><span>Organizer-</span>Anand Sawant (TIFR Mumbai)</li>
+          <!-- <li class="mb-3 fs-6 text-center">* [ To be confirmed ]</li> -->
+          <li class="mb-1 sp">Sanjay Amrutiya, IIT Gandhinagar</li>
+          <li class="mb-1 sp">Suratno Basu, TCG Crest, Kolkata</li>
+          <li class="mb-1 sp">Omprokash Das, TIFR Mumbai</li>
+          <li class="mb-1 sp">Jyoti Dasgupta, IIT(ISM) Dhanbad</li>
+          <li class="mb-1 sp">Umesh Dubey, HRI, Allahabad</li>
+          <li class="mb-1 sp">Neena Gupta, ISI Kolkata</li>
+          <li class="mb-1 sp">Rahul Gupta, IMSc Chennai</li>
+          <!-- <li class="mb-1 sp">Sudarshan Gurjar, IIT Bombay</li> -->
+          <li class="mb-1 sp">Buddhadev Hajra, TIFR Mumbai</li>
+          <li class="mb-1 sp">Archana Morye, University of Hyderabad</li>
+          <li class="mb-1 sp">Sarbeshwar Pal, IISER Trivandrum</li>
+          <li class="mb-1 sp">Gopinath Sahoo, TIFR Mumbai</li>
+          <!-- <li class="mb-1 sp">Sanjay Kumar Singh, IISER Bhopal</li> -->
+          <li class="mb-1 sp">Aditya Subramaniam, IISER Tirupati</li>
+          <li class="mb-1 sp">Tanya Kaushal Srivastava, IIT Gandhinagar</li>
+          <li class="mb-1 sp">V. Uma, IIT Madras</li>
+
+
+        </ul>
+      </div>
+    </div>
+    <!-- Algebraic Graph Theory -->
+    <div class="card scheduleCard m-0 p-0 mt-2" id="3">
+      <div class="card-body m-0 p-2">
+        <ul class="my-md-5 p-0 m-0 ">
+          <li class="fs-3 mb-1 text-center fw-bold listName fLi">Algebraic Graph <span>Theory</span></li>
+          <li class="fs-5 mb-3 text-center li2 text-secondary"><span>Organizer-</span>Sasmita Barik (IIT Bhubaneswar)</li>
+          <!-- <li class="mb-3 fs-6 text-center">* [ To be confirmed ]</li> -->
+          <li class="mb-1 sp">Anirban Banerjee, IISER Kolkata</li>
+          <li class="mb-1 sp">Sasmita Barik, IIT Bhubaneswar</li>
+          <!-- <li class="mb-1 sp">Abraham Berman, Technion-Israel Institute of Technology, Israel</li> -->
+          <li class="mb-1 sp">Projesh Nath Choudhury, IIT Gandhinagar</li>
+          <li class="mb-1 sp">Shamik Ghosh, Jadavpur University</li>
+          <!-- <li class="mb-1 sp">Shivani Goel, IISc Bangalore</li> -->
+          <li class="mb-1 sp">Rakesh Jana, IIT Bombay</li>
+          <li class="mb-1 sp">Debajit Kalita, Tezpur University</li>
+          <li class="mb-1 sp">Rajesh Kannan M, IIT Hyderabad</li>
+          <li class="mb-1 sp">Sumit Mohanty, IIM Ranchi</li>
+          <li class="mb-1 sp">Hiranmoy Pal, NIT Rourkela</li>
+          <li class="mb-1 sp">Swarup Kumar Panda, IIT Kharagpur</li>
+          <li class="mb-1 sp">Kamal Lochan Patra, NISER, Bhubaneshwar</li>
+          <li class="mb-1 sp">Shariefuddin Pirzada, University of Kashmir</li>
+          <li class="mb-1 sp">Ranveer Singh, IIT Indore</li>
+          <li class="mb-1 sp">Sivaramakrishnan Sivasubramanian, IIT Bombay</li>
+          <li class="mb-1 sp">Lavanya Selvaganesh, IIT BHU</li>
+          <li class="mb-1 sp">S. Selvaraja, IIT Bhubaneswar</li>
+
+
+        </ul>
+      </div>
+    </div>
+    <!-- Complex Analysis -->
+    <div class="card scheduleCard m-0 p-0 mt-2" id="4">
+      <div class="card-body m-0 p-2">
+        <ul class="my-md-5 p-0 m-0 ">
+          <li class="fs-3 mb-1 text-center fw-bold listName fLi"><span>Complex Analysis</span></li>
+          <li class="fs-5 mb-3 text-center li2 text-secondary"><span>Organizer-</span>Sairam Kaliraj (IIT Ropar)</li>
+          <!-- <li class="mb-3 fs-6 text-center">* [ To be confirmed ]</li> -->
+
+          <li class="mb-1 sp">Ritu Agarwal, MNIT Jaipur</li>
+          <li class="mb-1 sp">Vasudeva Rao Allu, IIT Bhubaneswar</li>
+          <li class="mb-1 sp">G. P. Balakumar, IIT Palakkad</li>
+          <li class="mb-1 sp">Abhijit Banerjee,  Kalyani University</li>
+          <li class="mb-1 sp">Bappaditya Bhowmik, IIT Kharagpur</li>
+          <li class="mb-1 sp">Diganta Borah, IISER Pune</li>
+          <li class="mb-1 sp">Gorachand Chakraborty, Sidho Kanho Birsha University</li>
+          <li class="mb-1 sp">Sushil Gorai, IISER Kolkata</li>
+          <li class="mb-1 sp">Sairam Kaliraj, IIT Ropar</li>
+          <li class="mb-1 sp">P. Muthu Kumar, IIT Kanpur</li>
+          <!-- <li class="mb-1 sp">Indrajit Lahiri, University of Kalyani</li> -->
+          <li class="mb-1 sp">Sabyasachi Mukherjee, TIFR Mumbai</li>
+          <!-- <li class="mb-1 sp">Tarakanta Nayak, IIT Bhubaneshwar</li> -->
+          <li class="mb-1 sp">Guru Prem Prasad, IIT Guwahati</li>
+          <li class="mb-1 sp">Swadesh K. Sahoo, IIT Indore</li>
+          <li class="mb-1 sp">Sanjeev Singh, IIT Indore</li>
+          <li class="mb-1 sp">Srihari Sreedharan, IISER Thiruvananthapuram</li>
+          <!-- <li class="mb-1 sp">Jaikrishnan, IIT Palakkad</li> -->
+          <li class="mb-1 sp">Sivaguru, TIFR CAM Bangalore</li>
+
+
+
+        </ul>
+      </div>
+    </div>
+    <!-- Functional Analysis -->
+    <div class="card scheduleCard m-0 p-0 mt-2" id="5">
+      <div class="card-body m-0 p-2">
+        <ul class="my-md-5 p-0 m-0 ">
+          <li class="fs-3 mb-1 text-center fw-bold listName fLi"><span>Functional Analysis</span></li>
+          <li class="fs-5 mb-3 text-center li2 text-secondary"><span>Organizer-</span>Panchugopal Bikram (NISER)</li>
+          <!-- <li class="mb-3 fs-6 text-center">* [ To be confirmed ]</li> -->
+
+          <li class="mb-1 sp">Kesab Chandra Baksi, IIT Kanpur</li>
+          <li class="mb-1 sp">Monojit Bhattacharjee, BITS Goa</li>
+          <li class="mb-1 sp">Sayan Chakraborty, IAI, TCG CREST, Kolkata</li>
+          <li class="mb-1 sp">Bata Krishna Das, IIT Bombay</li>
+          <li class="mb-1 sp">Debabrata De, NISER</li>
+          <li class="mb-1 sp">Sandipan De, IIT Goa</li>
+          <li class="mb-1 sp">Dhriti Ranjan Dolai, IIT Dharwad</li>
+          <li class="mb-1 sp">Ranjana Jain, Delhi University</li>
+          <li class="mb-1 sp">Rahul K, IIT Kanpur</li>
+          <li class="mb-1 sp">Vijay Kodiyalam, IMSc Chennai</li>
+          <li class="mb-1 sp">Kunal Krishna Mukherjee, IIT Madras</li>
+          <li class="mb-1 sp">Soumyashant Nayak, ISI Bangalore</li>
+          <li class="mb-1 sp">Sasmita Patnaik, IIT Kanpur</li>
+          <li class="mb-1 sp">Issan Patri, ISI Delhi</li>
+          <li class="mb-1 sp">Samya Kumar Roy, ISI Kolkata</li>
+          <li class="mb-1 sp">Diptesh Kumar Saha, ISI Kolkata</li>
+
+        </ul>
+      </div>
+    </div>
+    <!-- Geometry and Topology -->
+    <div class="card scheduleCard m-0 p-0 mt-2" id="6">
+      <div class="card-body m-0 p-2">
+        <ul class="my-md-5 p-0 m-0 ">
+          <li class="fs-3 mb-1 text-center fw-bold listName fLi">Geometry and <span>Topology</span></li>
+          <li class="fs-5 mb-3 text-center li2 text-secondary"><span>Organizer-</span>Mahuya Dutta (ISI Kolkata)</li>
+          <!-- <li class="mb-3 fs-6 text-center">* [ To be confirmed ]</li> -->
+
+          <li class="mb-1 sp">Aritra Bhowmick, IISER Kolkata</li>
+          <li class="mb-1 sp">Apratim Chakraborty, TCG Crest, Kolkata</li>
+          <li class="mb-1 sp">Ved Datar, IISc Bangalore</li>
+          <li class="mb-1 sp">Arijit Dey, IIT Madras</li>
+          <li class="mb-1 sp">Rukmini Dey, ICTS Bangalore</li>
+          <li class="mb-1 sp">Abhijeet Ghanwat, TIFR Mumbai</li>
+          <li class="mb-1 sp">Radhika Gupta, TIFR Mumbai</li>
+          <li class="mb-1 sp">Dheeraj Kulkarni, IISER Bhopal</li>
+          <li class="mb-1 sp">Pradip Kumar, Shiv Nadar Institute of Eminence (SNIoE)</li>
+          <li class="mb-1 sp">Rama Mishra, IISER Pune</li>
+          <li class="mb-1 sp">Goutam Mukherjee, TCG Crest, Kolkata</li>
+          <li class="mb-1 sp">Anima Nagar, IIT Delhi</li>
+          <li class="mb-1 sp">Abhijit Pal, IIT Kanpur</li>
+          <!-- <li class="mb-1 sp">Vamsi Pingali, IISc Bangalore*</li> -->
+          <li class="mb-1 sp">Bidyut Sanki, IIT Kanpur</li>
+          <li class="mb-1 sp">Riddhi Shah, JNU</li>
+
+
+        </ul>
+      </div>
+    </div>
+
+    <!--Groups and their Representations -->
+    <div class="card scheduleCard m-0 p-0 mt-2" id="7">
+      <div class="card-body m-0 p-2">
+        <ul class="my-md-5 p-0 m-0 ">
+          <li class="fs-3 mb-1 text-center fw-bold listName fLi">Groups and their <span>Representations</span></li>
+          <li class="fs-5 mb-3 text-center li2 text-secondary"><span>Organizer-</span>Sandip Singh (IIT Bombay)</li>
+          <!-- <li class="mb-3 fs-6 text-center">* [ To be confirmed ]</li> -->
+
+          <li class="mb-1 sp">Kumar Balasubramanian, IISER Bhopal</li>
+          <li class="mb-1 sp">Pralay Chatterjee, IMSc Chennai</li>
+          <!-- <li class="mb-1 sp">K. Gongopadhyay, IISER Mohali</li> -->
+          <!-- <li class="mb-1 sp">Dilpreet Kaur, IIT Jodhpur</li> -->
+          <li class="mb-1 sp">Amiya Mondal, IISER Berhampur</li>
+          <li class="mb-1 sp">Arghya Mondal, Krea University</li>
+          <li class="mb-1 sp">Arunava Mandal, IIT Roorkee</li>
+          <li class="mb-1 sp">Shiv Parsad, IIT Goa</li>
+          <li class="mb-1 sp">Sunil Prajapati, IIT Bhubaneswar</li>
+          <li class="mb-1 sp">Basudev Pattanayak, IIT Bombay</li>
+          <!-- <li class="mb-1 sp">Shiv Prakash Patel, IIT Delhi</li> -->
+          <li class="mb-1 sp">Ravi Raghunathan, IIT Bombay</li>
+          <li class="mb-1 sp">C.S. Rajan, Ashoka University</li>
+          <li class="mb-1 sp">Shashank Vikram Singh, IISER Mohali</li>
+          <li class="mb-1 sp">Pooja Singla, IIT Kanpur</li>
+          <li class="mb-1 sp">UK Anandavardhanan, IIT Bombay</li>
+          <li class="mb-1 sp">R. Venkatesh, IISc Bengaluru</li>
+          <li class="mb-1 sp">Mahendra Kumar Verma, IIT Roorkee</li>
+          <li class="mb-1 sp">Manoj Kumar Yadav, HRI Prayagraj (Allahabad)</li>
+
+        </ul>
+      </div>
+    </div>
+    <!--	Numerical Analysis -->
+    <div class="card scheduleCard m-0 p-0 mt-2" id="8">
+      <div class="card-body m-0 p-2">
+        <ul class="my-md-5 p-0 m-0 ">
+          <li class="fs-3 mb-1 text-center fw-bold listName fLi"><span>Numerical Analysis</span></li>
+          <li class="fs-5 mb-3 text-center li2 text-secondary"><span>Organizer-</span>Rajen Kumar Sinha (IIT Guwahati)</li>
+          <!-- <li class="mb-3 fs-6 text-center">* [ To be confirmed ]</li> -->
+
+          <!-- <li class="mb-1 sp">Aekta Aggarwal, IIM Indore</li> -->
+          <li class="mb-1 sp">Indranil Chowdhury, IIT Kanpur</li>
+          <li class="mb-1 sp">Bhupen Deka, IIT Guwahati</li>
+          <li class="mb-1 sp">Jogen Dutta, North Guwahati College</li>
+          <li class="mb-1 sp">Deepjyoti Goswami, Tezpur University</li>
+          <li class="mb-1 sp">Thirupathi Gudi, IISc Bangalore</li>
+          <li class="mb-1 sp">Jhuma Sen Gupta, BITS Pilani, Hyderabad</li>
+          <li class="mb-1 sp">Arbaz Khan, IIT Roorkee</li>
+          <li class="mb-1 sp">Dond Asha Kisan, IISER Thiruvananthapuram</li>
+          <!-- <li class="mb-1 sp">Sarvesh Kumar, IIST Thiruvananthapuram</li> -->
+          <li class="mb-1 sp">Sudarshan Kumar K, IISER Thiruvananthapuram</li>
+          <li class="mb-1 sp">Bankim Chandra Mandal, IIT Bhubaneswar</li>
+          <li class="mb-1 sp">Kaushik Mukherjee, IIST Thiruvananthapuram</li>
+          <li class="mb-1 sp">Ajit Patel, The LNM Institute of Information Technology</li>
+          <li class="mb-1 sp">Satyajit Pramanik, IIT Guwahati</li>
+          <li class="mb-1 sp">Gujji Murali Mohan Reddy, BITS Pilani, Hyderabad</li>
+          <li class="mb-1 sp">Sangita Yadav, BITS Pilani, Pilani</li>
+
+
+        </ul>
+      </div>
+    </div>
+    <!-- 9.	Number Theory -->
+    <div class="card scheduleCard m-0 p-0 mt-2" id="9">
+      <div class="card-body m-0 p-2">
+        <ul class="my-md-5 p-0 m-0 ">
+          <li class="fs-3 mb-1 text-center fw-bold listName fLi"><span>Number Theory</span></li>
+          <li class="fs-5 mb-3 text-center li2 text-secondary"><span>Organizer-</span>Akshaa Vatwani (IIT Gandhinagar)</li>
+          <!-- <li class="mb-3 fs-6 text-center">* [ To be confirmed ]</li> -->
+
+          <!-- <li class="mb-1 sp">Shalini Bhattacharya, IISER Tirupati</li> -->
+          <li class="mb-1 sp">Sneha Chaubey, IIIT Delhi</li>
+          <li class="mb-1 sp">Atul Dixit, IIT Gandhinagar</li>
+          <li class="mb-1 sp">U. K. Anandavardhanan, IIT Bombay</li>
+          <li class="mb-1 sp">Shamik Ghosh, Jadavpur University</li>
+          <li class="mb-1 sp">Gautam Kalita, IIIT Guwahati</li>
+          <li class="mb-1 sp">Aditya Karnataki,  CMI</li>
+          <li class="mb-1 sp">Kummari Mallesham, IIT Bombay</li>
+          <li class="mb-1 sp">Anirban Mukhopadhyay, IMSc Chennai</li>
+          <li class="mb-1 sp">Saranya G. Nair, BITS Pilani, Goa Campus</li>
+          <!-- <li class="mb-1 sp">M. Ram Murty, Queen's University, Canada</li> -->
+          <li class="mb-1 sp">Sudhir Pujahari, NISER Bhubaneshwar</li>
+          <!-- <li class="mb-1 sp">R. Thangadurai, Harish Chandra Research Institute Allahabad</li> -->
+          <li class="mb-1 sp">C. S. Rajan, Ashoka University</li>
+          <!-- <li class="mb-1 sp">Gunja Sachdeva, BITS Pilani (Goa Campus)</li> -->
+          <li class="mb-1 sp">Arnab Saha, IIT Gandhinagar</li>
+          <li class="mb-1 sp">Neelam Saikia, IIT Bhubaneshwar</li>
+          <li class="mb-1 sp">Bipul Kumar Sarmah, Tezpur University</li>
+          <li class="mb-1 sp">Divyum Sharma, BITS Pilani</li>
+          <li class="mb-1 sp">Guhan Venkat, Ashoka University</li>
+
+
+
+
+        </ul>
+      </div>
+    </div>
+    <!-- 10.	Partial Differential Equation -->
+    <div class="card scheduleCard m-0 p-0 mt-2" id="10">
+      <div class="card-body m-0 p-2">
+        <ul class="my-md-5 p-0 m-0 ">
+          <li class="fs-3 mb-1 text-center fw-bold listName fLi">Partial Differential <span>Equation</span></li>
+          <li class="fs-5 mb-3 text-center li2 text-secondary"><span>Organizer-</span>Mayukh Mukherjee (IIT Bombay)</li>
+          <!-- <li class="mb-3 fs-6 text-center">* [ To be confirmed ]</li> -->
+
+          <li class="mb-1 sp">Aashirwad Ballai, IISc Bangalore</li>
+          <li class="mb-1 sp">Souptik Chakraborty, IIT Bombay</li>
+          <li class="mb-1 sp">Ved Datar, IISc Bangalore</li>
+          <!-- <li class="mb-1 sp">Ramya Dutta, TIFR CAM Bangalore*</li> -->
+          <li class="mb-1 sp">Debdip Ganguly, IIT Delhi</li>
+          <!-- <li class="mb-1 sp">Prashanta Garain, IISER Berhampur*</li> -->
+          <li class="mb-1 sp">Kartick Ghosh, IISc Bangalore</li>
+          <li class="mb-1 sp">Sarika Goyal, Netaji Subhas University of Technology</li>
+          <li class="mb-1 sp">Saikatul Haque, HRI Allahabad</li>
+          <li class="mb-1 sp">Harsha Hutridurga, IIT Bombay</li>
+          <li class="mb-1 sp">Saikat Mazumdar, IIT Bombay</li>
+          <li class="mb-1 sp">Subrata Majumdar, IIT Bombay</li>
+          <li class="mb-1 sp">Debanjana Mitra, IIT Bombay</li>
+          <!-- <li class="mb-1 sp">Vamsi Pingali, IISc Bangalore*</li> -->
+          <!-- <li class="mb-1 sp">Alok Kumar Sahoo, IISER Pune</li> -->
+          <li class="mb-1 sp">Alok Kumar Sahoo, Department of Higher Education, Odisha</li>
+          <li class="mb-1 sp">Abrojyoti Sen, TIFR CAM Bangalore</li>
+          <li class="mb-1 sp">Vivek Tewary, KREA University</li>
+          <!-- <li class="mb-1 sp">Jagmohan Tyagi, IIT Gandhinagar</li> -->
+          <li class="mb-1 sp">Sheela Verma, IIT BHU</li>
+
+
+
+
+
+        </ul>
+      </div>
+    </div>
+
+    <!-- 11.	Probability Theory -->
+    <div class="card scheduleCard m-0 p-0 mt-2" id="11">
+      <div class="card-body m-0 p-2">
+        <ul class="my-md-5 p-0 m-0 ">
+          <li class="fs-3 mb-1 text-center fw-bold listName fLi"><span>Probability Theory</span></li>
+          <li class="fs-5 mb-3 text-center li2 text-secondary"><span>Organizer-</span>Moumanti Podder (IISER Pune)</li>
+          <!-- <li class="mb-3 fs-6 text-center">* [ To be confirmed ]</li> -->
+
+          <li class="mb-1 sp">Kartick Adhikari, IISER Bhopal</li>
+          <li class="mb-1 sp">Arvind Ayyer, IISc Bangalore</li>
+          <li class="mb-1 sp">Sohom Bhattacharya, University of Florida</li>
+          <li class="mb-1 sp">Arijit Chakraborty, ISI Kolkata</li>
+          <li class="mb-1 sp">Nishant Chandgotia, TIFR CAM Bangalore</li>
+          <li class="mb-1 sp">Biltu Dan, IISc Bangalore</li>
+          <li class="mb-1 sp">Soudeep Deb, IIM Bangalore</li>
+          <li class="mb-1 sp">Sayar Karmakar, University of Florida</li>
+          <li class="mb-1 sp">Krishanu Maulik, ISI Kolkata</li>
+          <li class="mb-1 sp">Somabha Mukherjee, National University of Singapore</li>
+          <li class="mb-1 sp">Moumanti Podder, IISER Pune</li>
+          <li class="mb-1 sp">Souvik Roy, ISI Kolkata</li>
+          <li class="mb-1 sp">Rishideep Roy, IIM Bangalore</li>
+          <li class="mb-1 sp">Soumyarup Sadhukhan, IIT Kanpur</li>
+          <li class="mb-1 sp">Neeraja Sahasrabudhe, IISER Mohali</li>
+          <li class="mb-1 sp">Anish Sarkar, ISI Delhi</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 12.	Women in Mathematics -->
+    <div class="card scheduleCard m-0 p-0 mt-2" id="12">
+      <div class="card-body m-0 p-2">
+        <ul class="my-md-5 p-0 m-0 ">
+          <li class="fs-3 mb-1 text-center fw-bold listName fLi">Women in <span>Mathematics</span></li>
+          <li class="fs-5 mb-3 text-center li2 text-secondary"><span>Organizer-</span>Sriparna Bandopadhyay (IIT Guwahati)</li>
+          <!-- <li class="mb-3 fs-6 text-center">* [ To be confirmed ]</li> -->
+
+          <li class="mb-1 sp">Anisa Chorwadwala, IISER Pune</li>
+          <li class="mb-1 sp">Prohelika Das, Cotton University</li>
+          <li class="mb-1 sp">Munmun Hazarika, Tezpur University</li>
+          <li class="mb-1 sp">Anuradha Jha, IIIT Guwahati</li>
+          <li class="mb-1 sp">Sangita Jha, NIT Rourkela</li>
+          <li class="mb-1 sp">Tanusree Khandai, IISER Mohali</li>
+          <!-- <li class="mb-1 sp">Lakshmi Lavanya, IISER Tirupati</li> -->
+          <li class="mb-1 sp">Minerva Mukhopadhyay, IIT Kanpur</li>
+          <li class="mb-1 sp">Sunanda Naik, Gauhati University</li>
+          <li class="mb-1 sp">Anita Pal, NIT Durgapur</li>
+          <li class="mb-1 sp">Senthil Raani, IISER Berhampur</li>
+          <li class="mb-1 sp">Dhanya Rajendran, IISER Thiruvananthapuram</li>
+          <li class="mb-1 sp">Manideepa Saha, NIT Meghalaya</li>
+          <li class="mb-1 sp">Sunanda Saha, Vellore Institute of Technology</li>
+          <li class="mb-1 sp">Helen Saikia, Gauhati University</li>
+          <li class="mb-1 sp">Farha Sultana, IIIT Guwahati</li>
+
+
+
+
+
+        </ul>
+      </div>
+    </div>
+
+    <div class="card scheduleCard m-0 p-0 mt-2" id="13">
+      <div class="card-body m-0 p-2">
+        <ul class="my-md-5 p-0 m-0 ">
+          <li class="fs-3 mb-1 text-center fw-bold listName fLi"><span>History of Mathematics in India (HoMI)</span></li>
+          <li class="fs-5 mb-3 text-center li2 text-secondary"><span>Organizer-</span>Tanya Kaushal Srivastava (IIT Gandhinagar)</li>
+          <!-- <li class="mb-3 fs-6 text-center">* [ To be confirmed ]</li> -->
+
+          <li class="mb-1 sp">K. Mahesh, IIT Kharagpur</li>
+          <li class="mb-1 sp">Vankateswara Pai, IISER Pune</li>
+          
+        </ul>
+      </div>
+    </div>
+
+
+
+
+    <!-- footer -->
+    <div class="footer my-2 p-2">
+
+<div class="ulWrapper">
+    <ul class="ul-footer ms-3 my-2 ul-footer-1">
+                <li class="footer-li"><a href="https://www.iitg.ac.in/" target="_blank">CHRIST(DEEMED TO BE UNIVERSITY)</a></li>
+
+                <li class="footer-li"><a href="https://www.iitg.ac.in/iitg_academic?aca=mathematics" target="_blank">Department of Science and Huanities, Kengeri Campus</a></li>
+
+    </ul>
+</div>
+
+<div class="copyRight"><p class="text-center">© All Rights reserved.</p></div>
+</div>  </div>
+  <script>
+    $(document).ready(function() {
+      $('.topLine').addClass('tracking-out-expand');
+
+
+    })
+  </script>
+</body>
+
+
+<!-- Mirrored from event.iitg.ac.in/RMS2024/symSpeaker.php by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 21 Apr 2024 17:26:03 GMT -->
+</html>

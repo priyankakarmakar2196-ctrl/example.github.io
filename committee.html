@@ -8,12 +8,14 @@
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RMS2024 | Home</title>
+  <title>RMS2024 | Committee</title>
   <link rel="stylesheet" type="text/css" href="icons-1.7.2/font/bootstrap-icons.css">
   <link rel="stylesheet" type="text/css" href="fontawesome6/css/all.min.css">
   <link rel="stylesheet" type="text/css" href="font/font.css">
   <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="/committee/css/style.css">
   <script type="text/javascript" src="jquery/jquery-3.6.0.min.js"></script>
   <script type="text/javascript" src="waypoints/lib/jquery.waypoints.min.js"></script>
   <script src="FlowType.JS-master/flowtype.js"></script>
@@ -220,21 +222,19 @@
        </div>
      </div>
     </div>
-    <div class="main">
-      <div class="card homeCard">
-      
-
-        <div class="imgWrapper p-1">
-          <img class="img-fluid" src="image/back.jpeg" alt="" >
+    <div class="container">
+        <h3 class="is-size-3 text-center">Committee</h3>
+        <div class="container" id="committee_category">
+            Please wait.. We are fetching required informations to display you the requested content.
         </div>
-
-
-      </div>
-
+        <div id="committee_list"></div>
     </div>
-    <div class="footer my-2 p-2">
 
-      <div class="ulWrapper">
+    <br><br><br>
+<!-- footer -->
+<div class="_footer my-2 py-16">
+
+    <div class="ulWrapper">
         <ul class="ul-footer ms-3 my-2 ul-footer-1">
             <li class="footer-li"><a href="https://christuniversity.in/" target="_blank">CHRIST (DEEMED TO BE UNIVERSITY) KENGERI CAMPUS</a></li>
             <li class="footer-li"><a href="https://christuniversity.in/departments/bangalore%20kengeri%20campus/school%20of%20engineering%20and%20technology/sciences%20and%20humanities%20(engineering)" target="_blank">Department of Sciences and Humanities</a></li>
@@ -242,21 +242,15 @@
     </div>
 
 <div class="copyRight"><p class="text-center">© All Rights reserved.</p></div>
-</div>  </div>
-
-  <script>
-
+</div></div>
+<script>
     $(document).ready(function() {
-      $('.imgWrapper').addClass('kenburns-top');
-      $('.confTitle p').addClass("tracking-in-expand");
-      $('.confDate p').addClass("tracking-in-expand");
       $('.topLine').addClass('tracking-out-expand');
-      
+
 
     })
   </script>
+  <script src="./base.js"></script>
+  <script src="/committee/js/autoload.js"></script>
 </body>
-
-
-<!-- Mirrored from event.iitg.ac.in/RMS2024/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 21 Apr 2024 17:25:55 GMT -->
 </html>

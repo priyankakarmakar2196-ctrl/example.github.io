@@ -1,0 +1,55 @@
+a {
+  text-decoration: none;
+}
+
+input:focus {
+  -webkit-box-shadow: 0 !important;
+  box-shadow: 0 !important;
+  outline: 0 !important;
+  -webkit-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
+.form-control {
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  outline: -webkit-focus-ring-color auto 0px !important;
+  height: 2.8rem !important;
+}
+
+.form-select:focus {
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  outline: -webkit-focus-ring-color auto 0px !important;
+  border: 1px solid #ced4da !important;
+}
+
+.form-control:focus {
+  border-color: #ced4da !important;
+}
+
+
+.btn:focus {
+  border: 0 !important;
+  outline: 0 !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.btn {
+  border: 0 !important;
+}
+
+
+.form-check-input {
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  outline: -webkit-focus-ring-color auto 0px !important;
+}
+
+.form-check-input:checked {
+  background-color: rgb(23, 31, 138) !important;
+  border: none !important;
+
+}

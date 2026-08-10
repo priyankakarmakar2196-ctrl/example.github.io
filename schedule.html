@@ -2,21 +2,27 @@
 <html lang="en">
 
 
-<!-- Mirrored from event.iitg.ac.in/RMS2024/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 21 Apr 2024 17:25:55 GMT -->
+<!-- Mirrored from event.iitg.ac.in/RMS2024/schedule.php by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 21 Apr 2024 17:26:07 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RMS2024 | Home</title>
+  <title>RMS2024 | Schedule</title>
   <link rel="stylesheet" type="text/css" href="icons-1.7.2/font/bootstrap-icons.css">
   <link rel="stylesheet" type="text/css" href="fontawesome6/css/all.min.css">
   <link rel="stylesheet" type="text/css" href="font/font.css">
   <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="jquery-ui-1.13.2.custom/jquery-ui.css">
+  <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/ui-lightness/jquery-ui.min.css"> -->
+
   <script type="text/javascript" src="jquery/jquery-3.6.0.min.js"></script>
+  <!-- <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script> -->
+
+  <script src="jquery-ui-1.13.2.custom/jquery-ui.js"></script>
   <script type="text/javascript" src="waypoints/lib/jquery.waypoints.min.js"></script>
-  <script src="FlowType.JS-master/flowtype.js"></script>
+  <!-- <script src="bootstrap-5.0.2-dist/js/bootstrap.js"></script> -->
   <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
   <script src="search.js"></script>
   <script src="dist/jquery.mark.min.js"></script>
@@ -28,47 +34,227 @@
       margin: 0;
       box-sizing: border-box;
     }
-    .homeCard{
-      position: relative;
+
+    :root {
+      --border: 1px solid #4d4d4d;
     }
-    /* .homeCard>span{
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      top: 1rem;
-      z-index: 100;
+
+    .scheduleCard {
+      background: #2b2a2b;
+      color: white;
+    }
+
+
+
+    main {
+      padding: .5rem;
+      width: 100%;
+      margin: auto;
+    }
+
+    main>h3 {
+      color: #ed666f;
+      font-family: 'PT Sans Narrow', sans-serif;
+    }
+
+    article>h6 {
+      font-family: 'PT Sans Narrow', sans-serif;
+    }
+
+    main>section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      row-gap: 1rem;
+    }
+
+    /* main>section.sec1 {
+      grid-template-columns: minmax(200px, max-content);
     } */
 
-
-    .homeCard>span.brochure {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      top: .5rem;
-      z-index: 100;
+    main>section>article {
+      text-align: center;
+      border-left: var(--border);
+      border-right: var(--border);
     }
 
-    .homeCard>span.image_gallery {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      top: 2.8rem;
-      z-index: 100;
+    .accordion>div>li {
+      list-style: none;
     }
+
+    .ulinvSpeaker {
+      counter-reset: count;
+    }
+
+    .ulinvSpeaker>li>a {
+      text-decoration: none;
+    }
+
+    .ulinvSpeaker>li,
+    .listName {
+      color: rgb(72, 87, 136);
+    }
+
+    .listName {
+      letter-spacing: 3px;
+    }
+
+    .sp {
+      font-size: 1.2rem;
+      color: rgb(72, 87, 136);
+    }
+
+
+
+    .ulinvSpeaker>li.sp {
+      counter-increment: count;
+    }
+
+    .ulinvSpeaker>li.sp::before {
+      content: counter(count) '';
+      color: rgb(72, 87, 136);
+    }
+
+    .ulinvSpeaker>li.sp:nth-child(-n+09):before {
+      content: '0' counter(count);
+    }
+
+    .li2 {
+      font-weight: 600;
+    }
+
+    .li2>span {
+      letter-spacing: 3px;
+    }
+
+    .fLi>span {
+      display: inline-block;
+      position: relative;
+      color: rgb(72, 87, 136);
+    }
+
+
+    .ulinvSpeaker>li {
+      list-style: none;
+    }
+
+    .card-body>p>span>a {
+      text-decoration: none;
+    }
+
+    .sp {
+      list-style: square;
+      list-style-position: inside;
+    }
+
+
+
+
+    .card>.card-body>ul {
+      width: 50%;
+    }
+
+    .card>.card-body>ul>li {
+      margin-left: 2rem;
+    }
+
+
+    .ulinvSpeaker {
+      width: auto !important;
+    }
+
+    table>tbody>tr>td:not(:first-child) {
+      text-align: center;
+    }
+
+    .btn-primary {
+      border: none !important;
+    }
+
+    table>tbody>tr>td:nth-child(3)>a {
+      background-color: #ed6c66 !important;
+    }
+
+    table>tbody>tr>td:nth-child(4)>a {
+      background-color: #31b6cc !important;
+    }
+
+    .table-responsive {
+      width: 100% !important;
+    }
+
+    .scheduleTable {
+      width: 1000px;
+    }
+
+
+    #accordion {
+      margin: 0 auto;
+      height: 700px;
+      max-width: 400px;
+    }
+
+    #accordion>div>li>.btn {
+      border: none !important;
+      font-size: 1rem;
+    }
+
+    #accordion>div>li:first-child>.btn {
+      color: #0d6efd !important;
+    }
+
+    #accordion>div>li:nth-child(2)>.btn {
+      color: #ed6c66 !important;
+    }
+
+    #accordion>div>li:nth-child(3)>.btn {
+      color: #31b6cc !important;
+    }
+
     @media only screen and (max-width: 992px) {
-      .homeCard>span>a {
-        font-size: .7rem;
+      .card>.card-body>ul {
+        width: 70%;
       }
+
+
+      .card>.card-body>ul>li {
+        margin-left: 0;
+      }
+
+      .ulinvSpeaker {
+        width: auto !important;
+      }
+
+      .scheduleTable {
+        width: 950px;
+      }
+
+    }
+
+    @media only screen and (max-width: 768px) {
+      .sp {
+        font-size: 1.2rem;
+      }
+
+      .card>.card-body>ul {
+        width: 100%;
+      }
+
+      .ulinvSpeaker {
+        width: auto !important;
+      }
+
+
     }
   </style>
 </head>
 
 <body id="body">
+
   <div class="WrapperBox">
 
     <div class="d-flex flex-column justify-content-center align-items-center top m-0 p-0 h3 text-secondary text-center pt-2">
 <p class="p-0 m-0 topLine">RMS2024</p>
-    <!--  -->
+    
     <input class="form-control p-0 m-0 form-control-sm m-0 ps-1 searchBox" type="text" placeholder="Search" name="keyword">
 </div>
 <hr>
@@ -220,18 +406,18 @@
        </div>
      </div>
     </div>
-    <div class="main">
-      <div class="card homeCard">
-      
 
-        <div class="imgWrapper p-1">
-          <img class="img-fluid" src="image/back.jpeg" alt="" >
-        </div>
+  <br><br><br><br><br><br><br><br>
+  <h2 style="display: flex; justify-content: center; align-items: center;">
+    TBA
+  </h2>
+    <br><br><br><br><br><br><br><br>
 
 
-      </div>
 
-    </div>
+
+
+    <!-- footer -->
     <div class="footer my-2 p-2">
 
       <div class="ulWrapper">
@@ -245,18 +431,14 @@
 </div>  </div>
 
   <script>
-
-    $(document).ready(function() {
-      $('.imgWrapper').addClass('kenburns-top');
-      $('.confTitle p').addClass("tracking-in-expand");
-      $('.confDate p').addClass("tracking-in-expand");
-      $('.topLine').addClass('tracking-out-expand');
-      
-
-    })
+       $(function() {
+      $("#accordion").accordion({
+        collapsible: true
+      });
+    });
   </script>
 </body>
 
 
-<!-- Mirrored from event.iitg.ac.in/RMS2024/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 21 Apr 2024 17:25:55 GMT -->
+<!-- Mirrored from event.iitg.ac.in/RMS2024/schedule.php by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 21 Apr 2024 17:26:11 GMT -->
 </html>

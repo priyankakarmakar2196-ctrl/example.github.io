@@ -1,0 +1,1409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from event.iitg.ac.in//RMS2024/talks.php by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 21 Apr 2024 17:26:03 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RMS2024 | Contributory Talks</title>
+  <link rel="stylesheet" type="text/css" href="icons-1.7.2/font/bootstrap-icons.css">
+  <link rel="stylesheet" type="text/css" href="fontawesome6/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="font/font.css">
+  <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="jquery/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="waypoints/lib/jquery.waypoints.min.js"></script>
+  <!-- <script src="bootstrap-5.0.2-dist/js/bootstrap.js"></script> -->
+  <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    *,
+    *::before,
+    *::after {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    .card-body {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      justify-items: center;
+    }
+
+
+    ul>li {
+      list-style: none;
+    }
+
+    .ulinvSpeaker {
+      counter-reset: count;
+    }
+
+    .ulinvSpeaker>li,
+    .listName {
+      color: rgb(72, 87, 136);
+    }
+
+    .listName {
+      letter-spacing: 3px;
+    }
+
+    .sp {
+      font-size: 1.5rem;
+      color: rgb(72, 87, 136);
+    }
+
+
+
+    .ulinvSpeaker>li.sp {
+      counter-increment: count;
+    }
+
+    .ulinvSpeaker>li.sp::before {
+      content: counter(count) '';
+      color: rgb(72, 87, 136);
+    }
+
+    .ulinvSpeaker>li.sp:nth-child(-n+10):before {
+      content: '0' counter(count);
+    }
+
+    .li2 {
+      font-weight: 600;
+    }
+
+    .li2>span {
+      letter-spacing: 3px;
+    }
+
+    .fLi>span {
+      display: inline-block;
+      position: relative;
+      color: rgb(72, 87, 136);
+    }
+
+
+    .ulinvSpeaker>li {
+      list-style: none;
+    }
+
+    .ulinvSpeaker>li>a {
+      text-decoration: none;
+    }
+
+    .sp {
+      list-style: square;
+      list-style-position: inside;
+    }
+
+
+
+
+    .card>.card-body>ul {
+      width: 50%;
+    }
+
+    .card>.card-body>ul>li {
+      margin-left: 2rem;
+    }
+
+
+    .ulinvSpeaker {
+      width: auto !important;
+    }
+
+
+
+    /* style for workshop */
+
+    .speaker {
+      display: grid;
+      grid-template-columns: 1fr;
+      align-items: center;
+      justify-items: start;
+      border-radius: 0.25rem 0 0 0.25rem;
+      box-sizing: border-box !important;
+      -moz-box-sizing: border-box !important;
+      -webkit-box-sizing: border-box !important;
+
+    }
+
+    .wkBox_odd>.row>.speaker {
+      background-color: #435757;
+    }
+
+    .wkBox_odd>.row>.spkProfile {
+      background-color: #285368;
+    }
+
+    .wkBox_even>.row>.speaker {
+      background-color: #285368;
+    }
+
+    .wkBox_even>.row>.spkProfile {
+      background-color: #435757;
+    }
+
+
+
+
+    .spkProfile {
+      display: grid;
+      grid-template-columns: 1fr;
+      align-items: center;
+      text-align: justify;
+      border-radius: 0 0.25rem 0.25rem 0;
+      box-sizing: border-box !important;
+      -moz-box-sizing: border-box !important;
+      -webkit-box-sizing: border-box !important;
+    }
+
+    .speaker>p>span,
+    .spkProfile>span {
+      letter-spacing: 3px;
+      display: inline-block;
+    }
+
+    .Box {
+      margin-bottom: .2rem;
+    }
+
+
+
+    .talkTable {
+      width: 1200px;
+      margin: 0 auto;
+      margin-top: 2rem;
+    }
+
+    .talkTable>thead>tr:nth-child(2) {
+      background-color: #272628;
+      color: azure;
+    }
+
+    .talkTable>thead>tr:nth-child(1)>td>span>a {
+      cursor: pointer;
+      color: #1187a2;
+      text-decoration: none;
+    }
+
+    .talkTable>thead>tr:nth-child(1)>td {
+      text-transform: uppercase;
+      letter-spacing: 5px;
+    }
+
+    .talkTable>thead>tr:nth-child(2)>th:first-child {
+      border-right: 1px solid #fff;
+    }
+
+    .talkTable>tbody>tr:nth-child(odd)>td:nth-child(1) {
+      background-color: #435757;
+      color: #fff;
+      border-right: 1px solid #fff;
+      text-align: left !important;
+      /* padding-left: 2rem; */
+    }
+
+    .talkTable>tbody>tr:nth-child(odd)>td:nth-child(2) {
+      background-color: #285368;
+      color: #fff;
+
+    }
+
+    .talkTable>tbody>tr:nth-child(even)>td:nth-child(1) {
+      background-color: #285368;
+      color: #fff;
+      border-right: 1px solid #fff;
+      text-align: left !important;
+      /* padding-left: 2rem; */
+    }
+
+    .talkTable>tbody>tr:nth-child(even)>td:nth-child(2) {
+      background-color: #435757;
+      color: #fff;
+    }
+
+
+
+
+    .table-responsive {
+      width: 100%;
+    }
+
+    @media only screen and (max-width: 992px) {
+      .card>.card-body>ul {
+        width: 70%;
+      }
+
+
+      .card>.card-body>ul>li {
+        margin-left: 0;
+      }
+
+      .ulinvSpeaker {
+        width: auto !important;
+      }
+
+      .talkTable {
+      width: 950px;
+    }
+
+
+    }
+
+    @media only screen and (max-width: 768px) {
+      .sp {
+        font-size: 1.2rem;
+      }
+
+      .card>.card-body>ul {
+        width: 100%;
+      }
+
+      .ulinvSpeaker {
+        width: auto !important;
+      }
+      /* .talkTable {
+      width: 700px;
+    } */
+
+
+    }
+  </style>
+</head>
+
+<body id="body">
+
+  <div class="WrapperBox">
+
+    <div class="d-flex flex-column justify-content-center align-items-center top m-0 p-0 h3 text-secondary text-center pt-2">
+<p class="p-0 m-0 topLine">RMS2024</p>
+    
+    <input class="form-control p-0 m-0 form-control-sm m-0 ps-1 searchBox" type="text" placeholder="Search" name="keyword">
+</div>
+<hr>
+<!-- <div class="navWrap"> -->
+<nav class="navbar navbar-expand-lg my-1" id="navbar">
+  <div class="container-fluid">
+       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" aria-expanded="false" aria-label="Toggle navigation">
+      <!-- <span class="navbar-toggler-icon"></span> -->
+      <i class="bi bi-list"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="">
+      <ul class="navbar-nav ms-auto">
+ <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="index.html"><i class="bi bi-house-fill"></i></a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="overview.html">Overview</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link text-lg-center" href="#">Venue & Travel</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="registration.html">Registration</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href=#>Accommodation</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link text-lg-center" href="organizers.html">Symposia & Organizers</a>
+</li>
+
+<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Speakers
+          </a>
+          
+        </li>
+
+
+<li class="nav-item">
+    <a class="nav-link" href=#>Schedule & Abstract</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="committee.html">Committee</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link text-lg-center" href="https://www.ramanujanmathsociety.org/" target="_blank">Ramanujan Mathematical Society</a>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link" href="contact.html">Contact</a>
+</li>
+
+
+      </ul>
+   
+    </div>
+  </div>
+</nav>
+<!-- </div> --><!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Enable both scrolling & backdrop</button> -->
+
+  <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+    <!-- <div class="offcanvas-header">
+      <i class="bi bi-x-lg" data-bs-dismiss="offcanvas" aria-label="Close"></i>
+    </div> -->
+   <div class="offcanvasInner">
+   <!-- <i class="bi bi-x-lg" data-bs-dismiss="offcanvas" aria-label="Close"></i> -->
+   <i class="bi bi-x-square" data-bs-dismiss="offcanvas" aria-label="Close"></i>
+     <div class="offcanvas-body">
+       <ul class="ul-offcanvas text-white">
+         
+         <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="index.html"><i class="bi bi-house-fill"></i></a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="overview.html">Overview</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link text-lg-center" href="#">Venue & Travel</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="registration.html">Registration</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href=#>Accommodation</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link text-lg-center" href="organizers.html">Symposia & Organizers</a>
+</li>
+
+<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Speakers
+          </a>
+          
+        </li>
+
+
+<li class="nav-item">
+    <a class="nav-link" href=#>Schedule & Abstract</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="committee.html">Committee</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link text-lg-center" href="https://www.ramanujanmathsociety.org/" target="_blank">Ramanujan Mathematical Society</a>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link" href="contact.html">Contact</a>
+</li>
+
+
+       </ul>
+     </div>
+   </div>
+  </div>
+
+    <!-- link -->
+    <div class="card scheduleCard m-0 p-0">
+      <div class="card-body m-0 p-2">
+        <ul class="ulinvSpeaker p-0 m-0 my-md-5">
+          <li class="fs-3 mb-3 text-center fw-bold fLi"><span>List of Speakers by Subject</span></li>
+
+          <li class="mb-1 sp" id=""><span>&#9474;</span><a href="#1">Algebra</a></li>
+          <li class="mb-1 sp" id=""><span>&#9474;</span><a href="#2">Algebraic Geometry</a></li>
+          <li class="mb-1 sp" id=""><span>&#9474;</span><a href="#3">Algebraic Graph Theory</a></li>
+          <li class="mb-1 sp" id=""><span>&#9474;</span><a href="#4">Complex Analysis</a></li>
+          <li class="mb-1 sp" id=""><span>&#9474;</span><a href="#5">Functional Analysis</a></li>
+          <li class="mb-1 sp" id=""><span>&#9474;</span><a href="#6">Geometry and Topology </a></li>
+          <li class="mb-1 sp" id=""><span>&#9474;</span><a href="#7">Groups and their Representations</a></li>
+          <li class="mb-1 sp" id=""><span>&#9474;</span><a href="#8">Numerical Analysis</a></li>
+          <li class="mb-1 sp" id=""><span>&#9474;</span><a href="#9">Number Theory</a></li>
+          <li class="mb-1 sp" id=""><span>&#9474;</span><a href="#10">Partial Differential Equation</a></li>
+          <li class="mb-1 sp" id=""><span>&#9474;</span><a href="#11">Probability Theory</a></li>
+          <li class="mb-1 sp" id=""><span>&#9474;</span><a href="#12">Women in Mathematics</a></li>
+          <li class="mb-1 sp" id=""><span>&#9474;</span><a href="#13">History of Mathematics in India (HoMI)</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- algerbra -->
+    <div class="card scheduleCard m-0 p-0 mt-2">
+      <div class="card-body m-0 p-2" id="1">
+        <div class="table-responsive">
+          <table class="table align-middle text-secondary talkTable">
+            <thead>
+              <tr>
+                <td colspan="3" class="text-center h4 fw-bold position-relative">Algebra <span class="position-absolute bottom-0 end-0 h5 fw-bold"><a href="abs_contri/Algebra-all.pdf" target="_blank" >ABSTRACT <i class="bi bi-download"></i></a></span></td>
+              </tr>
+              <tr>
+                <!-- <th scope="col" class="text-center w-25">Name of Symposiums</th> -->
+                <th scope="col" class="text-center h5" style="width: 250px;">Name</th>
+                <th scope="col" class="text-center h5">Title of the Talk</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center fs-6"> Tanay Saha </td>
+                <td> On the distance to the nearest non-prime polynomial matrix </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Ayan Ghosh </td>
+                <td> Trigonometric thin sets and statistically characterized subgroups </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Praveen Manju </td>
+                <td> (σ, τ)-Derivations of Group Rings with Applications </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Prakash P </td>
+                <td> Ideals of S-semigroups </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Tushar Singh </td>
+                <td> Existence of S-Primary Decomposition in S-Noetherian Rings </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> P M S Sai Krishna </td>
+                <td> An algebraic characterization of the affine three space in arbitrary characteristic </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Shruti Priya </td>
+                <td> A note on Ratliff-Rush filtration, Reduction number and Postulation number of $\mathfrak m$-primary ideals </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Chitra Venugopal </td>
+                <td> Rees algebra of maximal order Pfaffians and its diagonal subalgebras </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Sandeep Singh </td>
+                <td> On the relationship Between different Automorphism Groups of a Finitely Generated Group </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Balchand Prajapati </td>
+                <td> Composition of Generalized Derivations Act as a Jordan Product in Prime Rings </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Annoy Sengupta </td>
+                <td> Hammocks for Non-Domestic String Algebras </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Aniruddha Saha </td>
+                <td> Vanishing of (Co)Homologies and CM Modules of Minimal Multiplicity </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Jyotsna Sharma </td>
+                <td> Fields with Primitive Elements having Primitive Image under Rational Functions </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Aakash Choudhary </td>
+                <td> Existence of Primitive Pairs with two Prescribed Traces over Finite Fields </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Anoot Kumar Yadav </td>
+                <td> Ratliff-Rush Filtration, Hilbert Coefficients and Reduction Number of Integrally Closed Ideals </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Pradeep Rai </td>
+                <td> Quantum Codes from Skew Constacyclic Codes over the Ring $\mathcal{R}=\mathbb{F}_{q}[u_{1},u_{2},...,u_{r}]/\langle u_{i}^3-u_{i}, u_{i}u_{j}-u_{j}u_{i}\rangle$ </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Tapas Kumar Roy </td>
+                <td> On combinatorial characterization of generators of toric ideal of weighted oriented graph </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Dimple Rani Goyal </td>
+                <td> A characterisation of matrix rings </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Shashi Ranjan Sinha </td>
+                <td> On Auslander's Depth Formula </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Himanshu Rewri </td>
+                <td> Isotropy Group of Lotka-Volterra Derivations of $K[X_{1},\Cdots,X_{N}]$ </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Sugata Mandal </td>
+                <td> Skew Forms and Galois Theory </td>
+              </tr>
+
+
+
+
+
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+
+      <!-- Algebraic Geometry -->
+      <div class="card-body m-0 p-2 mb-4" id="2">
+        <div class="table-responsive">
+          <table class="table align-middle text-secondary talkTable">
+            <thead>
+              <tr>
+                <td colspan="3" class="text-center h4 fw-bold">Algebraic Geometry</td>
+              </tr>
+              <tr>
+                <!-- <th scope="col" class="text-center w-25">Name of Symposiums</th> -->
+                <th scope="col" class="text-center h5" style="width: 250px;">Name</th>
+                <th scope="col" class="text-center h5">Title of the Talk</th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+                <td colspan="2" class="text-center fs-5"><p class="text-center"  style="height:50px;line-height:50px">No Contributory Talk</p></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+
+      <!-- Algebraic Graph Theory -->
+      <div class="card-body m-0 p-2" id="3">
+        <div class="table-responsive">
+          <table class="table align-middle text-secondary talkTable">
+            <thead>
+              <tr>
+                <td colspan="3" class="text-center h4 fw-bold position-relative">Algebraic Graph Theory <span class="position-absolute bottom-0 end-0 h5 fw-bold"><a href="abs_contri/Algebraic-Graph-Theory-All.pdf" target="_blank" >ABSTRACT <i class="bi bi-download"></i></a></span></td>
+              </tr>
+              <tr>
+                <!-- <th scope="col" class="text-center w-25">Name of Symposiums</th> -->
+                <th scope="col" class="text-center h5" style="width: 250px;">Name</th>
+                <th scope="col" class="text-center h5">Title of the Talk</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center fs-6"> Shashwath S Shetty </td>
+                <td> On the First Zagreb Index of Graphs with Self-Loops </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Harshitha A </td>
+                <td> Randic Index of a Graph with Self-Loops </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Madhumitha K V </td>
+                <td> KG Sombor energy of graphs with self loops </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Samiron Parui </td>
+                <td> On Some General Operators of Hypergraphs </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Anita Arora </td>
+                <td> Eccentric Graph of Trees and their Cartesian Products </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Manjil P. Saikia </td>
+                <td> Alternating Sign Matrices with Vertical Symmetry and Plane Partitions </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Anwita Bhowmik </td>
+                <td> Hypergeometric functions for Dirichlet characters and Peisert-like graphs on $\mathbb{Z}_{n}$ </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Gete Umbrey </td>
+                <td> Extraction and Combination Method of Boolean Logic Simplification </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Jesmina Pervin </td>
+                <td> Structural Characterization of Connected Graphs with Integer-Valued Q-Spectral Radius </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Smrati Pandey </td>
+                <td> Eccentricity Matrix of Distance Regular Graphs </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Priyanka Singh </td>
+                <td> Almost Self-Centered Index of Some Graphs </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Nijara Konch </td>
+                <td> Some results on $A_\alpha$- spectra of graphs with pockets </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Sumanta Borah </td>
+                <td> On Generalized Randic Matrix of Digraphs </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Idweep Jyoti Gogoi </td>
+                <td> On Zagreb Energies of Some Graph Operations </td>
+              </tr>
+
+
+
+
+
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+
+      <!-- Complex Analysis -->
+      <div class="card-body m-0 p-2" id="4">
+        <div class="table-responsive">
+          <table class="table align-middle text-secondary talkTable">
+            <thead>
+              <tr>
+                <td colspan="3" class="text-center h4 fw-bold position-relative">Complex Analysis <span class="position-absolute bottom-0 end-0 h5 fw-bold"><a href="abs_contri/Complex-Analysis-All.pdf" target="_blank" >ABSTRACT <i class="bi bi-download"></i></a></span></td>
+              </tr>
+              <tr>
+                <!-- <th scope="col" class="text-center w-25">Name of Symposiums</th> -->
+                <th scope="col" class="text-center h5" style="width: 250px;">Name</th>
+                <th scope="col" class="text-center h5">Title of the Talk</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center fs-6"> Nitai Mandal </td>
+                <td> Study on the Dynamics of Root Finding Maps </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Soumyadip Majee </td>
+                <td> Study on the Residual Julia Sets of Transcendental Semigroups </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Subham Chatterjee </td>
+                <td> On K-meromorphic Functions with Siegel Disk </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Abhishek Pandey </td>
+                <td> Visibility in quasihyperbolic geometry: a notion of strict negative curvature in the Riemannian sense </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Simi Bhuyan </td>
+                <td> Boundedness of Generalized Hilbert-Type Operators on Certain Analytic Function Spaces </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Adithya Mayya </td>
+                <td> Location of Zeros of One Parameter Family of Rational Harmonic Trinomials </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Subhadip Pal </td>
+                <td> Multidimensional Bohr radii for vector-valued holomorphic functions </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Molla Basir Ahamed </td>
+                <td> Generalized Bohr inequalities for certain classes of functions on unit disk </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Shalini Rana </td>
+                <td> Radii of Starlikeness of Ratios of Analytic Functions with Fixed Second Coefficients </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Sabir Ahammed </td>
+                <td> Bohr Phenomeon for Class of Analytic Self-Maps on the Unit disk and Class of Subordination </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Gaurav Kumar </td>
+                <td> Dynamics of two one-parameter families of meromorphic functions involving sine and cosine hyperbolic functions </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Jiju Mammen </td>
+                <td> On Retracts of Balanced Domains of Holomorphy </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Partha Pratim Roy </td>
+                <td> Sharp Bound of Third Hankel Determinant for Inverse Coefficients of Starlike Function of Order 1/2 </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Apolo Chutia </td>
+                <td> Bohr Inequalities for Certain two Parameter Cesaro Averaging Operators </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Jasbir Parashar </td>
+                <td> Meromorphic harmonic spirallike functions with a pole at the origin </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Vibhuti Arora </td>
+                <td> Successive coefficients for functions in the spirallike family </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Soumen Pal </td>
+                <td> The Julia Sets of Chebyshev'S Method with Small Degrees </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Tanchar Molla </td>
+                <td> Generalization of the Enestrom-Kakeya Theorem through Polynomial Coefficients Relaxation </td>
+              </tr>
+
+
+
+
+
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+
+      <!-- Functional Analysis -->
+      <div class="card-body m-0 p-2" id="5">
+        <div class="table-responsive">
+          <table class="table align-middle text-secondary talkTable">
+            <thead>
+              <tr>
+                <td colspan="3" class="text-center h4 fw-bold position-relative">Functional Analysis <span class="position-absolute bottom-0 end-0 h5 fw-bold"><a href="abs_contri/Functional-Analysis-All.pdf" target="_blank" >ABSTRACT <i class="bi bi-download"></i></a></span></td>
+              </tr>
+              <tr>
+                <!-- <th scope="col" class="text-center w-25">Name of Symposiums</th> -->
+                <th scope="col" class="text-center h5" style="width: 250px;">Name</th>
+                <th scope="col" class="text-center h5">Title of the Talk</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center fs-6"> Malay Mandal </td>
+                <td> Operator Space structures of non-commutative unitary C*-algebra </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Shamim Sohel </td>
+                <td> Extreme contractions on some special Banach spaces </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Souvik Ghosh </td>
+                <td> On some geometric constants in a Banach space </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Uday Shankar Chakraborty </td>
+                <td> A Bishop-Phelps-Bollobas type property for Banach spaces with respect to minimum norm of bounded linear operators </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Mansi Mishra </td>
+                <td> The Weyl Transform of a measure </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Ritika Singhal </td>
+                <td> Vector-Valued Properties of Weyl Transform </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Arvish Dabra </td>
+                <td> Arens regularity of the Orlicz Figa-Talamanca Herz Algebra </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Sureshkumar M </td>
+                <td> Rokhlin Dimension: Permanence Properties and Ideal Separation </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Santu Bera </td>
+                <td> A spectral dichotomy for commuting $m$-isometries with negative core operator </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Shubham Jain </td>
+                <td> Toeplitz operators on the $n$-dimensional Hartogs triangle </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Pradip Debnath </td>
+                <td> Multivalued Geraghty contractions and their best proximity points </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Praveen Sharma </td>
+                <td> Interpolation Results for Convergence of Implicit Euler Schemes with Accretive Operator </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Arshad Khan </td>
+                <td> Nearly Invariant Brangesian Subspaces </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Sugirtha Gayathri </td>
+                <td> Kowalski-S\l{}odkowski Theorem for Condition Spectrum </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Mohana Rahul Nandan </td>
+                <td> A Generalized GKZ theorems and Kowalski-Słodkowski theorem for Reproducing kernel Hilbert space </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Krishna Bhattacharjee </td>
+                <td> New fixed point theorem on complete b-metric space by using Rus contraction mapping </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Suman Kumar </td>
+                <td> Controllability of Second Order Differential Systems with Nonlinear Control </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Kousik Dhara </td>
+                <td> Two Truncated Matrix Moment Problems </td>
+              </tr>
+
+
+
+
+
+
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+
+      <!-- Geometry and Topology -->
+      <div class="card-body m-0 p-2" id="6">
+        <div class="table-responsive">
+          <table class="table align-middle text-secondary talkTable">
+            <thead>
+              <tr>
+                <td colspan="3" class="text-center h4 fw-bold position-relative">Geometry and Topology <span class="position-absolute bottom-0 end-0 h5 fw-bold"><a href="abs_contri/Geometry-Topology-All.pdf" target="_blank" >ABSTRACT <i class="bi bi-download"></i></a></span></td>
+              </tr>
+              <tr>
+                <!-- <th scope="col" class="text-center w-25">Name of Symposiums</th> -->
+                <th scope="col" class="text-center h5" style="width: 250px;">Name</th>
+                <th scope="col" class="text-center h5">Title of the Talk</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center fs-6"> Bidisha Samanta </td>
+                <td> Traversable Wormholes Supported by Dark Matter and Monopoles with Semi-classical Effects </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Pooja Rani </td>
+                <td> The Brylinski Beta Function of a Double Layer </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Bhola Nath Saha </td>
+                <td> Filling with Separating Curves </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Manoj Prajapati </td>
+                <td> Dynamics of actions of automorphisms of discrete groups on certain compact spaces </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Rohit Nageshwar </td>
+                <td> Exploring Expansivity and its Implication </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Sourav Sarkar </td>
+                <td> On a construction of some homology $d$-manifolds </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Rana Sardar </td>
+                <td> Maps between Relatively Hyperbolic Boundaries </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Sehar Shakeel Raina </td>
+                <td> Some Implications of Relative Covering Axioms </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Subhamoy Mondal </td>
+                <td> Rapid fluctuations of a curve under chaotic maps </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Sushmita Yadav </td>
+                <td> On Dynamical Notions of Non-Autonomous Systems </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Ankita Sharma </td>
+                <td> A Generalization of a Result of Minakshisundaram and Pleijel </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Susmita Sarkar </td>
+                <td> Non star - Rothberger Properties Experiencing the Residuals in an Ideal </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Dhriti Sundar Patra </td>
+                <td> On the characterization of cosymplectic manifolds and rigidity of the Sasakian structure </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Anshu Agarwal </td>
+                <td> Handle Decomposition for a large class of compact orientable PL-4 manifolds </td>
+              </tr>
+
+
+
+
+
+
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+
+      <!-- Groups and their Representations -->
+      <div class="card-body m-0 p-2" id="7">
+        <div class="table-responsive">
+          <table class="table align-middle text-secondary talkTable">
+            <thead>
+              <tr>
+                <td colspan="3" class="text-center h4 fw-bold position-relative">Groups and their Representations <span class="position-absolute bottom-0 end-0 h5 fw-bold"><a href="abs_contri/Groups-Representations-All.pdf" target="_blank" >ABSTRACT <i class="bi bi-download"></i></a></span></td>
+              </tr>
+              <tr>
+                <!-- <th scope="col" class="text-center w-25">Name of Symposiums</th> -->
+                <th scope="col" class="text-center h5" style="width: 250px;">Name</th>
+                <th scope="col" class="text-center h5">Title of the Talk</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center fs-6"> Sabyasachi Dhar </td>
+                <td> Compatibility of Kazhdan and Brauer Homomorphism </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Ram Karan Choudhary </td>
+                <td> Rational Representations and Rational Group Algebra of Some Classes of $p$-groups </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Jyoti Garg </td>
+                <td> Primitive idempotents in rational group algebras of monomial groups </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Digjoy Paul </td>
+                <td> On Kronecker coefficients for representations of finite groups </td>
+              </tr>
+
+
+
+
+
+
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+
+      <!-- Numerical Analysis -->
+      <div class="card-body m-0 p-2" id="8">
+        <div class="table-responsive">
+          <table class="table align-middle text-secondary talkTable">
+            <thead>
+              <tr>
+                <td colspan="3" class="text-center h4 fw-bold position-relative">Numerical Analysis <span class="position-absolute bottom-0 end-0 h5 fw-bold"><a href="abs_contri/Numerical-Analysis-All.pdf" target="_blank" >ABSTRACT <i class="bi bi-download"></i></a></span></td>
+              </tr>
+              <tr>
+                <!-- <th scope="col" class="text-center w-25">Name of Symposiums</th> -->
+                <th scope="col" class="text-center h5" style="width: 250px;">Name</th>
+                <th scope="col" class="text-center h5">Title of the Talk</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center fs-6"> Sudhakar Chaudhary </td>
+                <td> Symmetric fractional order reduction method with L1 scheme on graded mesh for time fractional nonlocal diffusion-wave equation of Kirchhoff type </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Nilay Mondal </td>
+                <td> Development of a model for drug delivery into the diseased tissues by reversible electroporation </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Chandralekha Mahanta </td>
+                <td> Synergistic Effects of Darcy and Viscous Dissipation in Nanofluid Flow over a Vertically Permeable Plate with Magnetic Field Induction </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Krishna Yamanappa Poojara </td>
+                <td> An Efficient High Order Quadrature for Weakly Singular Operators and its Applications in Wave Scattering Problems </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Sunita Choudhary </td>
+                <td> Least square method for wave interaction with a tunnel and a submerged porous plate over a trench-type bottom </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Archana Arya </td>
+                <td> Energy Conserving Higher Order Mixed Finite Element Discretizations of Maxwell's Equations </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Niranjan Bora </td>
+                <td> On Polynomial Two Parameter Eigenvalue Probelm </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Raghunath Bandha </td>
+                <td> A new space transformed finite element method for elliptical interface problems with spherical interface in $R^n$ </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Sachin Kumar </td>
+                <td> Nonsymmetric Interior Penalty Galerkin Method for Black-Scholes Pde Modelling European Options </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Gopinath Sadhu </td>
+                <td> A Multiphase Model on Asymmetric Growth of an Avascular Tumour </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Rupchand Sutradhar </td>
+                <td> Intracellular Dynamics of Hepatitis B Virus Infection: A Mathematical Model and Global Sensitivity Analysis of its Parameters </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Sandip Maji </td>
+                <td> Nipg Method for Nonlinear Time-Fractional Integro-Partial Differential Equations </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Saurabh Bansal </td>
+                <td> "A Fourth-Order Accurate Numerical Method for Black-Scholes PDEs Arising in
+                  Option Pricing Integro-Partial Differential Equations" </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Aniruddha Seal </td>
+                <td> An Efficient Computational Technique for Semilinear Time Fractional Diffusion Equation </td>
+              </tr>
+               <tr>
+                <td class="text-center fs-6"> Jaya Agnihotri </td>
+                <td> Divergence Free Entropy Stable Schemes for Two-Fluid Relativistics Plasma Flow Equations </td>
+              </tr>
+
+
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+
+      <!-- Number Theory -->
+      <div class="card-body m-0 p-2" id="9">
+        <div class="table-responsive">
+          <table class="table align-middle text-secondary talkTable">
+            <thead>
+              <tr>
+                <td colspan="3" class="text-center h4 fw-bold position-relative">Number Theory <span class="position-absolute bottom-0 end-0 h5 fw-bold"><a href="abs_contri/Number-Theory-All.pdf" target="_blank" >ABSTRACT <i class="bi bi-download"></i></a></span>
+              <tr>
+                <!-- <th scope="col" class="text-center w-25">Name of Symposiums</th> -->
+                <th scope="col" class="text-center h5" style="width: 250px;">Name</th>
+                <th scope="col" class="text-center h5">Title of the Talk</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center fs-6"> Gurinder Singh </td>
+                <td> Certain Diophantine Equations and New Parity Results for 21-Regular Partitions </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Sumukha S </td>
+                <td> A Series Associated to Rankin-Selberg L-Function and Modified K-Bessel Function </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Guru Sharan N </td>
+                <td> Modular Relations involving Generalized Digamma Functions </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Nilanjan Bag </td>
+                <td> Fourth power mean of the general s-dimensional Kloosterman sums mod p </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Mohd Harun </td>
+                <td> Hybrid subconvexity bound for $GL(3) \times GL(2)$ $L$-functions: $t$ and level aspect </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Shruthi Chethan Bhat </td>
+                <td> Modular identities on special cases of Ramanujan's general continued fraction </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Ashish Kumar Pandey </td>
+                <td> On Inequalities Related with a Generalized Euler Totient Function and Lucas Sequences </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Shashank Chorge </td>
+                <td> Extreme values of Dirichlet L-functions at the critical points of the zeta function </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Meghali Garg </td>
+                <td> Equivalent criteria for the Riemann hypothesis for Chandrasekharan-Narasimhan class of L-functions </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Sourav Das </td>
+                <td> Inhomogeneous Khintchine-Groshev type theorems on manifolds over function fields </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Archit Agarwal </td>
+                <td> A $q$- series identity of Uchimura and its numerious generalization </td>
+              </tr>
+              <!-- <tr>
+                <td class="text-center fs-6"> Jaya Agnihotri </td>
+                <td> Divergence Free Entropy Stable Schemes for Two-Fluid Relativistics Plasma Flow Equations </td>
+              </tr> -->
+              <tr>
+                <td class="text-center fs-6"> Himanshi Chanana </td>
+                <td> Sum of the triple divisor function and Fourier coefficients of SL(3,Z) Hecke-Maass forms over quadratic polynomial </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Shivani Goel </td>
+                <td> Explicit zero repulsion of Dirichlet $L$-functions </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Subhrajyoti Bhattacharyya </td>
+                <td> Parity distribution and divisibility of mex-related partition functions </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Jagannath Sahoo </td>
+                <td> Wiener-Ikehara Tauberian Theorem with Improved Error </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Shaik Azharuddin </td>
+                <td> Transformations for Appell series over finite fields and traces of Frobenius for elliptic curves </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Pranjal Talukdar </td>
+                <td> Identities for the Rogers–Ramanujan Continued Fraction and Functions </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Himanshu Sharma </td>
+                <td> Monogenity of Iterates of Polynomials </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Chandan Kumar Vishwakarma </td>
+                <td> A congruence identity on ordered partition using permutation polynomials </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Hirakjyoti Das </td>
+                <td> Congruences Modulo Powers of 2 for Restricted Partition Triples Due to Lin and Wang </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Arshay Nimish Sheth </td>
+                <td> Euler Product Asymptotics for L-functions of Elliptic Curves </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Flora Jeba S </td>
+                <td> On K-Facile Perfect Numbers </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Shraddha Rajkhowa </td>
+                <td> Theta-Function Identities, Explicit Values for Ramanujan's Continued Fractions of Order Sixteen and Applications to Partition Theory </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Anirban Roy </td>
+                <td> Deficient and Near F_k - Perfect Numbers </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Anup Haldar </td>
+                <td> Exponential Sums with Multivariable Rational Functions and their Applications to Equidistribution of Solutions of Quadratic Congruences </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Pranjal Vishwakarma </td>
+                <td> The Eisenstein homology and cohomology groups for Imaginary quadratic fields </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Abhishek Jha </td>
+                <td> On terms in a dynamical divisibility sequence having a fixed G.C.D with their indices </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> H. Laxmi </td>
+                <td> Stability Of 2-Class Groups in Z_2-Extension of Certain Real Quadratic Number Fields </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Sulakashna </td>
+                <td> "Number of F_q-points on Diagonal hypersurfaces and hypergeometric
+                  function" </td>
+              </tr>
+
+
+
+
+
+
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+
+      <!-- Partial Differential Equation -->
+      <div class="card-body m-0 p-2" id="10">
+        <div class="table-responsive">
+          <table class="table align-middle text-secondary talkTable">
+            <thead>
+              <tr>
+                <td colspan="3" class="text-center h4 fw-bold position-relative">Partial Differential Equations <span class="position-absolute bottom-0 end-0 h5 fw-bold"><a href="abs_contri/Partial-Diff-Equations-All.pdf" target="_blank" >ABSTRACT <i class="bi bi-download"></i></a></span></td>
+              </tr>
+              <tr>
+                <!-- <th scope="col" class="text-center w-25">Name of Symposiums</th> -->
+                <th scope="col" class="text-center h5" style="width: 250px;">Name</th>
+                <th scope="col" class="text-center h5">Title of the Talk</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center fs-6"> Abhilash Tushir </td>
+                <td> Discrete Time-Dependent Wave Equation for the Schrodinger Operator with Unbounded Potential </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Diksha Gupta </td>
+                <td> Existence and multiplicity of positive solutions for a class of elliptic equations involving subcritical and critical non linearities in the hyperbolic space </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Uttam Kumar </td>
+                <td> Boundary blow up solutions for equations involving fractional p-Laplacian operator </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Ritabrata Jana </td>
+                <td> Positive solutions for fractional $p$- Laplace problem with indefinite sign </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Vinayak Mani Tripathi </td>
+                <td> Nehari Manifold Method for Singular Double Phase Problem with Optimal Control on Parameter </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Yashonanda Mahesh Maurya </td>
+                <td> Finite Meijer G-transform for Solving Steady-state Temperature Problems </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Sarbani Pramanik </td>
+                <td> On a class of infinite semipositone problems for $(p,q)$ Laplace operator </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Shubham Garg </td>
+                <td> Mathematical analysis of coupled mode theory </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Sanjit Biswas </td>
+                <td> Ground State Solution of a Schordinger Type Equation Involving Anisotropic P-Laplacian Operator via Pohozaev Manifold </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Jyotirmoy Rana </td>
+                <td> Study of Unsteady Solute Dispersion in Pulsatile Viscoelastic Fluid Flow </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Sivaram P </td>
+                <td> $L^\infty$ estimate for degenerate transverse complex Monge-Amp\`ere equation and its application </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Abhijit Shit </td>
+                <td> Fractional Model for Blood Flow in a Stenosed Artery under MHD Effect through Porous Medium </td>
+              </tr>
+
+
+
+
+
+
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+
+      <!-- Probability Theory -->
+      <div class="card-body m-0 p-2" id="11">
+        <div class="table-responsive">
+          <table class="table align-middle text-secondary talkTable">
+            <thead>
+              <tr>
+                <td colspan="3" class="text-center h4 fw-bold position-relative">Probability Theory <span class="position-absolute bottom-0 end-0 h5 fw-bold"><a href="abs_contri/Probability-Stat-All.pdf" target="_blank" >ABSTRACT <i class="bi bi-download"></i></a></span></td>
+              </tr>
+              <tr>
+                <!-- <th scope="col" class="text-center w-25">Name of Symposiums</th> -->
+                <th scope="col" class="text-center h5" style="width: 250px;">Name</th>
+                <th scope="col" class="text-center h5">Title of the Talk</th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+                <td class="text-center fs-6"> Archi Roy </td>
+                <td> Nonparametric method of multiple structural break detection in time series </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Rik Ghosh </td>
+                <td> Optimal Adaptive Randomization in SMART with Binary Outcome </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Ravi Kumar </td>
+                <td> Standby Redundancy Allocation for Series and Parallel Systems </td>
+              </tr>
+
+
+
+
+
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+
+      <!-- Women in Mathematics -->
+      <div class="card-body m-0 p-2" id="12">
+        <div class="table-responsive">
+          <table class="table align-middle text-secondary talkTable">
+            <thead>
+              <tr>
+                <td colspan="3" class="text-center h4 fw-bold position-relative">Women in Mathematics <span class="position-absolute bottom-0 end-0 h5 fw-bold"><a href="abs_contri/Women-Math-All.pdf" target="_blank" >ABSTRACT <i class="bi bi-download"></i></a></span></td>
+              </tr>
+              
+              <tr>
+                <!-- <th scope="col" class="text-center w-25">Name of Symposiums</th> -->
+                <th scope="col" class="text-center h5" style="width: 250px;">Name</th>
+                <th scope="col" class="text-center h5">Title of the Talk</th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+                <td class="text-center fs-6"> Prakriti Rai </td>
+                <td> A Generalized Class of Humbert-Hermite Polynomials </td>
+              </tr>
+              <tr>
+                <td class="text-center fs-6"> Shilpi Biswas </td>
+                <td> A Model of Load-Sharing Systems Using Piecewise Linear Approximation to Cumulative Hazard </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+
+      <!-- History of Mathematics in India (HoMI) -->
+      <div class="card-body m-0 p-2 mb-4" id="13">
+        <div class="table-responsive">
+          <table class="table align-middle text-secondary talkTable">
+            <thead>
+              <tr>
+                <td colspan="3" class="text-center h4 fw-bold">History of Mathematics in India (HoMI)</td>
+              </tr>
+              <tr>
+                <!-- <th scope="col" class="text-center w-25">Name of Symposiums</th> -->
+                <th scope="col" class="text-center h5" style="width: 250px;">Name</th>
+                <th scope="col" class="text-center h5">Title of the Talk</th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+                <td colspan="2" class="text-center fs-5"><p class="text-center"  style="height:50px;line-height:50px">No Contributory Talk</p></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+
+
+
+
+    </div>
+
+
+  </div>
+
+
+
+
+
+
+
+  <!-- footer -->
+  <div class="footer my-2 p-2">
+
+<div class="ulWrapper">
+    <ul class="ul-footer ms-3 my-2 ul-footer-1">
+                <li class="footer-li"><a href="https://www.iitg.ac.in/" target="_blank">CHRIST(DEEMED TO BE UNIVERSITY)</a></li>
+
+                <li class="footer-li"><a href="https://www.iitg.ac.in/iitg_academic?aca=mathematics" target="_blank">Department of Science and Huanities, Kengeri Campus</a></li>
+
+    </ul>
+</div>
+
+<div class="copyRight"><p class="text-center">© All Rights reserved.</p></div>
+</div>  </div>
+  <script>
+    $(document).ready(function() {
+      $('.topLine').addClass('tracking-out-expand');
+
+
+    })
+  </script>
+</body>
+
+
+<!-- Mirrored from event.iitg.ac.in//RMS2024/talks.php by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 21 Apr 2024 17:26:06 GMT -->
+</html>
